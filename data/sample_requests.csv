@@ -1,0 +1,8 @@
+request,label
+"/index.php?user=alice",benign
+"/search?q=hello",benign
+"/product?id=10",benign
+"/login?username=admin' OR '1'='1",malicious
+"/comment?text=<script>alert(1)</script>",malicious
+"/page?id=5;drop table users",malicious
+"/home?search=book",benign
